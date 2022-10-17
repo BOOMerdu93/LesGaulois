@@ -25,15 +25,16 @@ public class Village {
 		villageois[nbVillageois]=gaulois;
 		nbVillageois++;
 	}
-	public Gaulois trouverHabitant(int numéro)
+	public Gaulois trouverHabitant(int numero)
 	{
-		return villageois[numéro];
+		return villageois[numero];
 	}
 	
 	public static void main(String[] args) {
 	Village villageDesIrreductibles;
-	villageDesIrreductibles= new Village("villageDesIrréductibles",30);
-	Gaulois gaulois = villageDesIrreductibles.trouverHabitant(30);
+	villageDesIrreductibles= new Village("villageDesIrrï¿½ductibles",30);
+	//Gaulois gaulois = villageDesIrreductibles.trouverHabitant(30);
 	//il tente de lire au-dessus de la taille du tab//
+	Chef abraracourcix;
 	}	
 }
