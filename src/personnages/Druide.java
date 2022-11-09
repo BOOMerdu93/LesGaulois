@@ -27,11 +27,11 @@ public class Druide {
 	private String prendreParole() {
 		return "Le druide " + nom + " : ";
 	}
-	public int preparerPotion(int effetPotionMax)
+	public int preparerPotion()
 	{
 		Random objet = new Random();
-		int newForce= objet.nextInt((effetPotionMax-effetPotionMin)+1)+effetPotionMin;
-		return newForce;
+		forcePotion= objet.nextInt((getMax()-effetPotionMin)+1)+effetPotionMin;
+		return forcePotion;
 	}
 	
 	public void faireParler(int forcePotion)
@@ -64,7 +64,7 @@ public class Druide {
 		panoramix= new Druide("Panoramix", 5 , 10);
 		for (int i=0 ; i< 10; i++)
 		{
-			panoramix.faireParler(panoramix.preparerPotion(panoramix.getMax()));
+			panoramix.faireParler(panoramix.preparerPotion());
 		}
 	}
 }
